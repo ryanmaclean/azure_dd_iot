@@ -1,14 +1,16 @@
-# azure_dd_iot
-
 # Azure IoT Demo
 
 ## Links
+
+### Code Links
+
+* Devices: https://catalog.azureiotsolutions.com/kits?filters={%2212%22:[%221%22]}
+* LibSSL Issue for Ubuntu 20.04 - https://github.com/Azure/iotedge/issues/1918
+
 ### Documentation
 
 * https://docs.microsoft.com/en-us/cli/azure/iot/hub?view=azure-cli-latest#az_iot_hub_create
 * https://github.com/Azure-Samples/web-apps-node-iot-hub-data-visualization
-* Devices: https://catalog.azureiotsolutions.com/kits?filters={%2212%22:[%221%22]}
-* LibSSL Issue - https://github.com/Azure/iotedge/issues/1918
 * https://github.com/Azure/azure-iotedge/releases
 
 
@@ -104,9 +106,6 @@ npm start
 
 ```
 
-
 # Useful Commands
 
 `sudo iotedge check`
-
-
