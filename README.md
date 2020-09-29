@@ -10,7 +10,7 @@
 ### Documentation
 
 * https://docs.microsoft.com/en-us/cli/azure/iot/hub?view=azure-cli-latest#az_iot_hub_create
-* https://github.com/Azure-Samples/web-apps-node-iot-hub-data-visualization
+* Most of the magic! ❤️ https://github.com/Azure-Samples/web-apps-node-iot-hub-data-visualization
 * https://github.com/Azure/azure-iotedge/releases
 
 
