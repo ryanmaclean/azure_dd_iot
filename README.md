@@ -28,7 +28,7 @@ IOT_HUB_NAME=YourIoTH2N0P3N0P3N0P3
 
 ## Script
 
-In azure cloud shell: 
+In Azure Cloud Shell: 
 
 ```bash
 
