@@ -38,10 +38,10 @@ CONSUMER=YourConsumerGroupName
 RG=default
 DEVICE_ID=ubrpi32
 
-# Ensure we've got the az clie extension for iot installed
+# Ensure we've got the az cli extension for iot installed
 az extension add --name azure-iot
 
-# Create the hub, consumer group and retrive the connection string
+# Create the hub, consumer group and retrieve the connection string
 az iot hub create --resource-group $RG --name $IOT_HUB_NAME --sku S1 --partition-count 2
 az iot hub consumer-group create --hub-name $IOT_HUB_NAME --name $CONSUMER
 CONN_STRING=$(az iot hub show-connection-string --hub-name $IOT_HUB_NAME --policy-name service)
