@@ -106,6 +106,68 @@ npm start
 
 ```
 
+## Sensor Setup
+
+First update apt:
+
+```bash
+sudo apt update
+```
+
+Next, install `libgpiod`, and fix the 32bit pulsein bug by recompiling it for ARM64:
+
+```bash
+sudo apt install -y libgpiod-dev git build-essential
+git clone https://github.com/adafruit/libgpiod_pulsein.git
+cd libgpiod_pulsein/src
+make
+cp libgpiod_pulsein ~/.local/lib/python3.6/site-packages/adafruit_blinka/microcontroller/bcm283x/pulseio/libgpiod_pulsein
+cd
+```
+
+Finally, install the Adafruit Circuit Python DHT pip package, and all the Python bits needed:
+
+```bash
+sudo apt install -y python3-dev python3-pip
+python3 -m pip install --upgrade pip setuptools wheel
+pip3 install adafruit-circuitpython-dht
+```
+## Python Test Script
+
+From _this tutorial_:
+
+```python
+import time
+import board
+import adafruit_dht
+ 
+# Initialize the dht device, with data pin connected to:
+dhtDevice = adafruit_dht.DHT11(board.D18)
+ 
+while True:
+    try:
+        # Print the values to the serial port
+        temperature_c = dhtDevice.temperature
+        temperature_f = temperature_c * (9 / 5) + 32
+        humidity = dhtDevice.humidity
+        print(
+            "Temp: {:.1f} F / {:.1f} C    Humidity: {}% ".format(
+                temperature_f, temperature_c, humidity
+            )
+        )
+ 
+    except RuntimeError as error:
+        # Errors happen fairly often, just keep trying
+        print(error.args[0])
+        time.sleep(2.0)
+        continue
+    except Exception as error:
+        dhtDevice.exit()
+        raise error
+ 
+    time.sleep(1.0)
+```
+
 # Useful Commands
 
 `sudo iotedge check`
