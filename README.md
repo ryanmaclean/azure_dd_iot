@@ -168,6 +168,25 @@ while True:
     time.sleep(1.0)
 ```
 
+Results:
+```
+ubuntu@ubrpi32:~$ sudo python3 test.py
+Temp: 73.4 F / 23.0 C    Humidity: 55%
+Temp: 73.4 F / 23.0 C    Humidity: 54%
+Temp: 73.4 F / 23.0 C    Humidity: 54%
+Temp: 73.4 F / 23.0 C    Humidity: 54%
+Temp: 73.4 F / 23.0 C    Humidity: 54%
+Temp: 73.4 F / 23.0 C    Humidity: 53%
+Temp: 73.4 F / 23.0 C    Humidity: 55%
+Temp: 77.0 F / 25.0 C    Humidity: 95%
+Temp: 77.0 F / 25.0 C    Humidity: 95%
+Temp: 80.6 F / 27.0 C    Humidity: 95%
+Temp: 80.6 F / 27.0 C    Humidity: 95%
+Temp: 80.6 F / 27.0 C    Humidity: 95%
+Temp: 82.4 F / 28.0 C    Humidity: 95%
+Temp: 84.2 F / 29.0 C    Humidity: 95%
+```
+
 # Useful Commands
 
 `sudo iotedge check`
