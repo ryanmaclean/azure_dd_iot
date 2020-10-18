@@ -187,6 +187,10 @@ Temp: 82.4 F / 28.0 C    Humidity: 95%
 Temp: 84.2 F / 29.0 C    Humidity: 95%
 ```
 
+Video demo:
+
+![](CHT11_Raspberry_Pi_4_64bit_Ubuntu_18-EXTRALOW.gif)
+
 # Useful Commands
 
 `sudo iotedge check`
