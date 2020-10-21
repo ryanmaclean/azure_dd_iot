@@ -1,6 +1,6 @@
 # Azure IoT Demo
 
-[Architecture](architecture.png)
+![Architecture](architecture.png)
 
 ## Links
 
