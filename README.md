@@ -1,11 +1,13 @@
 # Azure IoT Demo
 
+[Architecture](architecture.png)
+
 ## Links
 
 ### Code Links
 
-* Devices: https://catalog.azureiotsolutions.com/kits?filters={%2212%22:[%221%22]}
-* LibSSL Issue for Ubuntu 20.04 - https://github.com/Azure/iotedge/issues/1918
+* [Supported Devices](https://catalog.azureiotsolutions.com/kits?filters={%2212%22:[%221%22])
+* [LibSSL Issue for Ubuntu 20.04](https://github.com/Azure/iotedge/issues/1918) - we're using 18.04 for now!
 
 ### Documentation
 
